@@ -1,0 +1,18 @@
+c:\users\mark.atkinson.infovest\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\bin\Debug\SPC Package Generator.exe.config
+c:\users\mark.atkinson.infovest\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\bin\Debug\SPC Package Generator.exe
+c:\users\mark.atkinson.infovest\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\bin\Debug\SPC Package Generator.pdb
+c:\users\mark.atkinson.infovest\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\obj\Debug\SPC Package Generator.csprojResolveAssemblyReference.cache
+c:\users\mark.atkinson.infovest\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\obj\Debug\MainWindow.baml
+c:\users\mark.atkinson.infovest\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\obj\Debug\MainWindow.g.cs
+c:\users\mark.atkinson.infovest\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\obj\Debug\App.g.cs
+c:\users\mark.atkinson.infovest\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\obj\Debug\SPC Package Generator_MarkupCompile.cache
+c:\users\mark.atkinson.infovest\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\obj\Debug\SPC Package Generator.g.resources
+c:\users\mark.atkinson.infovest\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\obj\Debug\SPC_Package_Generator.Properties.Resources.resources
+c:\users\mark.atkinson.infovest\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\obj\Debug\SPC Package Generator.csproj.GenerateResource.Cache
+c:\users\mark.atkinson.infovest\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\obj\Debug\SPC Package Generator.exe
+c:\users\mark.atkinson.infovest\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\obj\Debug\SPC Package Generator.pdb
+C:\Users\mark.atkinson.INFOVEST\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\obj\Debug\SqlColumnMapping.baml
+C:\Users\mark.atkinson.INFOVEST\documents\visual studio 2013\Projects\SPC Package Generator\SPC Package Generator\obj\Debug\SqlColumnMapping.g.cs
+C:\Users\mark.atkinson.INFOVEST\Documents\GitHub\package-generator\SPC Package Generator\SPC Package Generator\bin\Debug\SPC Package Generator.exe.config
+C:\Users\mark.atkinson.INFOVEST\Documents\GitHub\package-generator\SPC Package Generator\SPC Package Generator\obj\Debug\SPC Package Generator.exe
+C:\Users\mark.atkinson.INFOVEST\Documents\GitHub\package-generator\SPC Package Generator\SPC Package Generator\obj\Debug\SPC Package Generator.pdb
