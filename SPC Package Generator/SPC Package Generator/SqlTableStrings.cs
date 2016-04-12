@@ -9,10 +9,8 @@ namespace SPC_Package_Generator
 {
     class SqlTableStrings
     {
-        public void GenerateCreateTable(string schema, string tableName, DataTable columnsDT)
+        public string GenerateCreateTable(string schema, string tableName, DataTable columnsDT)
         {
-            CreateSchemaScript(schema); //make sure to create the schema in the sql database
-
             //
             string final = String.Concat(
                                             "CREATE TABLE "
@@ -22,7 +20,7 @@ namespace SPC_Package_Generator
                                            ,")"
                                             );
 
-            System.IO.File.WriteAllText(String.Format(@"C:\Test\{0}.sql", tableName), final);
+            return final;
         }
 
         //loop through DataTable from SqlColumnMapping form and generate sql script columns.
@@ -56,11 +54,6 @@ namespace SPC_Package_Generator
             {
                 return "NOT NULL";
             }
-        }
-
-        private void CreateSchemaScript(string schema)
-        {
-            System.IO.File.WriteAllText(String.Format(@"C:\Test\SCEMA.sql"), "CREATE SCHEMA " + schema);
         }
     }
 }

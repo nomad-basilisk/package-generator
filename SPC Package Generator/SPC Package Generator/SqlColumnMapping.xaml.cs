@@ -69,7 +69,7 @@ namespace SPC_Package_Generator
         {
             sqlTable_TextBox.Text = fileName.Replace("\"", "").Replace(" ", "").Replace(".csv", "").Replace("SPC", "");
 
-            filename_Label.Content = fileName.Replace("\"", "");
+            filename_Label.Text = fileName.Replace("\"", "");
         }
 
         //Fills datatable in form and derives sql type from column name values.
@@ -121,7 +121,14 @@ namespace SPC_Package_Generator
 
                 typeCol = type;
                 
-                dt.Rows.Add(true, actualCol, suggestionCol, typeCol, false);
+                //Check if column is code/description to determine nullable/not-nullable
+                bool nullable = true;
+                if(column.ToLower().Contains("code") || column.ToLower().Contains("description"))
+                {
+                    nullable = false;
+                }
+                
+                dt.Rows.Add(true, actualCol, suggestionCol, typeCol, nullable);
             }
 
             mainGridView.ItemsSource = dt.AsDataView(); 
@@ -155,10 +162,9 @@ namespace SPC_Package_Generator
                         "<<<TASK LIST>>>";
 
             string taskName = "Load" + namePattern.Replace("Pattern", "");
-            string sqlTable = sqlTable_TextBox.Text;
-
-            //using String interpolation tags in the 20's for XML task properties such as Sql Table and column mapping.
-            string finalTaskString = String.Format(taskString, taskName, namePattern, sqlTable_TextBox.Text, generateListOfColumnMappings());
+            string sqlTable = schema + "." + sqlTable_TextBox.Text;
+            
+            string finalTaskString = String.Format(taskString, taskName, namePattern, sqlTable, generateListOfColumnMappings());
 
             string xmlTaskList = Environment.NewLine + finalTaskString;
 
@@ -237,7 +243,10 @@ namespace SPC_Package_Generator
         private void GenerateSqlScripts()
         {
             SqlTableStrings sts = new SqlTableStrings();
-            sts.GenerateCreateTable(schema, sqlTable_TextBox.Text, dt);
+            string sql = sts.GenerateCreateTable(schema, sqlTable_TextBox.Text, dt);
+
+            System.IO.File.WriteAllText(String.Format(@"C:\Test\{0}.sql", sqlTable_TextBox.Text), sql);
+            System.IO.File.WriteAllText(String.Format(@"C:\Test\SCEMA.sql"), "CREATE SCHEMA " + schema);
         }
 
         private void Generate_Scripts_Click(object sender, RoutedEventArgs e)
