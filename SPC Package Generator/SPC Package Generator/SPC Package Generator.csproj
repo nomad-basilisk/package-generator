@@ -53,10 +53,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ConsolidateInstrumentBuilder.cs" />
+    <Compile Include="ConsolidateInstrumentStrings.cs" />
     <Compile Include="File.cs" />
     <Compile Include="SqlColumnMapping.xaml.cs">
       <DependentUpon>SqlColumnMapping.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SqlTableStrings.cs" />
     <Compile Include="VariableBuilder.cs" />
     <Compile Include="VariablePackageStrings.cs" />
     <Page Include="MainWindow.xaml">
